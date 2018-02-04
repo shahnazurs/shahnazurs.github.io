@@ -1,128 +1,72 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-        <style>
-            #demo{
-                margin-top: 20px;
-                 
-            }
-        </style>
-    </head>
-    <body>
-        <div id="demo">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+img{
+	
+	width:500px;
+	height:450px;
+}
+body{
+	background: rgba(255,204,230,1);
+}
 
-        </div>
-        <script type="text/babel">
-            class Picture extends React.Component
-            {
-                
-                render()
-                {
-                    var pictureStyle={
-                    marginLeft:"30px",
-                    backgroundColor:"#FFF",
-                    height: "200px",
-                    width: "150px",                   
-                    filter: "drop-shadow(0px 0px 5px #ccc)"
-
-                    }
-                    return(
-                    <div style={pictureStyle}>
-                            <Square bg={this.props.color}/>
-                            <Label tcolor={this.props.color}/>
-                    </div>
-                    );
-
-                }
-            }
-            class Square extends React.Component
-            {
-                render()
-                {
-                        var squareStyle={
-                            height:"150px",
-                            backgroundColor: this.props.bg,
-                            margin: "0px"
-                        }
-                    return(
-                        <div style={squareStyle}>
-                           
-                        </div>
-
-                    );
-                }
-            }
-            class Label extends React.Component
-            {
-                render()
-                {
-                    var labelStyle={
-                        fontWeight: "bold",
-                        fontSize: "20px",
-                        fontFamily: "san-serif",
-                        //padding: "15px",
-                        marginLeft: "25px"
-                    }
-                    return(
-                        <p style={labelStyle}>{this.props.tcolor}</p>
-                    );
-                }
-            }
-            class HelloWorld extends React.Component
-            {
-                render()
-                {
-                    var nameStyle={
-                        backgroundColor: this.props.bg,
-                        color: "#FFF",
-                        border: "2px solid black"
-
-                    }
-                    return(
-                  
-                        <h1 style={nameStyle}>Welcome, {this.props.name}</h1>
-                   
-                    );
-                }
-            }
-            class Letter extends React.Component
-            {
-                render()
-                {
-                    var letterStyle={
-                        margin: "20px",
-                        backgroundColor: this.props.mycolor,
-                        color: "#CEF6F5",
-                        padding: "20px",
-                        fontSize: "20px",
-                        display: "inline-block"
-                    }
-                    return(
-                        <div style={letterStyle}>{this.props.children}</div>
-                    );
-                }
-            }
-            var element=document.getElementById("demo");
-            ReactDOM.render(
-                
-                <div>             
-                    <HelloWorld name="Ahmed Ammar Kazim" bg="lightgreen"/>
-                    <HelloWorld name="Aisha Amreen Farida" bg="pink"/>
-                    <Picture color="#4000FF"/>
-                    <Letter mycolor="#CEF6F5">A</Letter>
-                    <Letter mycolor="#5858FA">E</Letter>
-                    <Letter mycolor="#CEA6F5">I</Letter>
-                    <Letter mycolor="#CEF6F5">O</Letter>
-                    <Letter mycolor="#CEF6F5">U</Letter>
-                </div>,
-                element
-            )
-        </script>
+.navbar-default {
+    background-color: rgba(203,96,179,1);
+    border-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+	
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+	background-color: rgb(214,163,214);
+}
+.dropdown-menu
+{
+	background-color: rgba(203,96,179,1);
+	color:red;
+	color:red;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <!-- <a class="navbar-brand" href="#">WebSiteName</a> -->
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tour <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Grand Canyon</a></li>
+            <li><a href="tour_lv.html">Las Vegas</a></li>
+            <li><a href="tour_page.html">Page, Arizona</a></li>
+          </ul>
+        </li>
+        <li><a href="tour_slc.html">Salt Lake City Snaps</a></li>
+        <li><a href="#">Wedding</a></li>
+      </ul>
+	  	   <!--<ul class="nav navbar-nav navbar-right">
         
-    </body>
-
-</html>
+        <li><a href="/amreen/ammar.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+      </ul> -->
+   
+    </div>
+  </div>
+</nav>
