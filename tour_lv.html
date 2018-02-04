@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+		/*
+		.cont{
+			width: 360px;
+			height: 360px;
+			overflow: hidden;
+			background-color: #000;
+			display:inline-block;
+			cursor: pointer;
+		}
+		.cont:active {
+			opacity: 0.65;
+		}
+		.cont:active {
+			-webkit-transform: scale(0.98);
+		}*/
+		img {
+			width: 280px;
+			height: 280px;
+			-webkit-transition: scale .4s ease-in-out;
+			-webkit-transition: translate 1s ease-in-out;
+			-webkit-transition: opacity .2s ease-in-out;
+			opacity: 0.65;
+		}
+		img:hover {
+			-webkit-animation: anim 5s 1 ease-out forwards;
+			opacity: 1.0;
+		} 
+		/*@-webkit-keyframes anim {
+		  12% { -webkit-transform: scale(1.1) translate(-10px, -10px) }
+		  100% { -webkit-transform: translate(-30px, -30px) scale(1.1) }
+		}*/
+
+		</style>
+	</head>
+	<body>
+		<div w3-include-html="header.html"></div>
+
+		<div class="container"> 
+			<a href="images/lv/img1.jpg" target="_blank"><img src="images/lv/img1.jpg"></a>
+			<a href="images/lv/img2.jpg" target="_blank"><img src="images/lv/img2.jpg"></a>
+			<a href="images/lv/img3.jpg" target="_blank"><img src="images/lv/img3.jpg"></a>
+			<a href="images/lv/img4.jpg" target="_blank"><img src="images/lv/img4.jpg"></a>
+			<a href="images/lv/img5.jpg" target="_blank"><img src="images/lv/img5.jpg"></a>
+			<a href="images/lv/img6.jpg" target="_blank"><img src="images/lv/img6.jpg"></a>
+			<a href="images/lv/img7.jpg" target="_blank"><img src="images/lv/img7.jpg"></a>
+		 </div>
+	</body>
+</html>
