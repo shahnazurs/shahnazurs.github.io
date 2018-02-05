@@ -67,14 +67,17 @@ background-color: rgb(143, 163, 113);
 background-color: rgb(58, 69, 129);
 color:#FFF;
 }
-.mybutton{
-margin-top: 8px;
-background-color: rgb(67, 121, 72);
-}
+
 .modalclass{
 background-color:crimson;
 color:antiquewhite;
 font-family: monospace;
+}
+.myli{
+	a:visited{
+		color: #FFF;
+	background-color: rgb(58, 69, 129);
+	}
 }
 
 </style>
@@ -102,14 +105,15 @@ font-family: monospace;
 						<li><a href="tour_page.html">Page, Arizona</a></li>
 						</ul>
 					</li>
-					<li><a href="tour_slc.html">Salt Lake City Snaps</a></li>
+					<li><a href="tour_slc.html" class="myli" >Salt Lake City Snaps</a></li>
 					<li><a href="#">Unforgettable Moments</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 					
 					<li>
 					<!--	<a href="/amreen/ammar.html"><span class="glyphicon glyphicon-fire"></span>&nbsp;&nbsp;Contact Designer</a></li> -->
-						<button type="button" class="btn btn-info btn-md mybutton" data-toggle="modal" data-target="#myModal">Contact Designer</button>
+						<!-- <button type="button" class="btn btn-info btn-md mybutton" data-toggle="modal" data-target="#myModal">Contact Designer</button>-->
+						<a href="#" data-toggle="modal" data-target="#myModal">Contact Designer</a>
 				</li>
 			</ul>
 		<!-- Modal -->
@@ -138,7 +142,6 @@ font-family: monospace;
 				</div>
 				</div>
 			</nav>
-
 <div class="container"> 
     <a href="images/page/img1.jpg" target="_blank"><img src="images/page/img1.jpg"></a>
    <a href="images/page/img2.jpg" target="_blank"><img src="images/page/img2.jpg"></a>
