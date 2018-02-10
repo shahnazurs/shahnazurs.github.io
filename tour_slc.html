@@ -26,6 +26,10 @@
 .cont:active {
     -webkit-transform: scale(0.98);
 }*/
+.bbc_css{
+	display: inline-block;
+	
+}
 img {
     width: 280px;
     height: 280px;
@@ -146,14 +150,45 @@ a:visited{
 				</div>
 				</div>
 			</nav>
+			
 <div class="container"> 
-    <a href="images/slc/img1.jpg" target="_blank"><img src="images/slc/img1.jpg"></a>
+	<div id="demo">
+
+
+	</div>
+    <!--<a href="images/slc/img1.jpg" target="_blank"><img src="images/slc/img1.jpg"></a>
    <a href="images/slc/img2.jpg" target="_blank"><img src="images/slc/img2.jpg"></a>
    <a href="images/slc/img3.jpg" target="_blank"><img src="images/slc/img3.jpg"></a>
-   <!--<a href="images/slc/img4.jpg" target="_blank"><img src="images/slc/img4.jpg"></a>-->
+   <a href="images/slc/img4.jpg" target="_blank"><img src="images/slc/img4.jpg"></a>-->
   
 
  </div>
+ <script type="text/babel">
+	class MyImage extends React.Component
+	{
+		render()
+		{
+			
+			return(
+				
+					<a href={this.props.picture} target="_blank"><img src={this.props.picture}/></a>
+				
+			);
+		}
+	}
+
+	ReactDOM.render(
+		<div class="bbc_css">
+		<MyImage picture="images/slc/img1.jpg"/>
+		<MyImage picture="images/slc/img2.jpg"/>
+		<MyImage picture="images/slc/img3.jpg"/>
+		<MyImage picture="images/slc/img4.jpg"/>
+		<MyImage picture="images/slc/img5.jpg"/>
+		<MyImage picture="images/slc/img6.jpg"/>
+		</div>,
+		document.querySelector("#demo")
+	);
+</script>
  </body>
  </html>
  
