@@ -1,0 +1,57 @@
+.bbc_css{
+	display: inline-block;
+	
+}
+		img {
+			width: 20%;
+			height: 30vh;
+			-webkit-transition: scale .4s ease-in-out;
+			-webkit-transition: translate 1s ease-in-out;
+			-webkit-transition: opacity .2s ease-in-out;
+			opacity: 0.65;
+		}
+		img:hover {
+			-webkit-animation: anim 5s 1 ease-out forwards;
+			opacity: 1.0;
+		} 
+		/*@-webkit-keyframes anim {
+		  12% { -webkit-transform: scale(1.1) translate(-10px, -10px) }
+		  100% { -webkit-transform: translate(-30px, -30px) scale(1.1) }
+		}*/
+
+		/* Menubar style */
+	
+		body{
+			background: rgb(143, 163, 113);
+		}
+		
+		.navbar-default {
+		background-color: rgb(67, 121, 72);
+		border-color: rgb(137, 155, 87);
+		}
+		.navbar-default .navbar-nav li > a {
+		color: #FFF;
+		
+		
+		}
+		.navbar-default .navbar-nav  li > a:hover,
+		.navbar-default .navbar-nav  li > a:focus,
+		.navbar-default .navbar-nav  li > a:visited {
+			color: #FFF;
+			background-color: rgb(58, 69, 129);
+		}
+		.dropdown .dropdown-menu
+		{
+		background-color: rgb(143, 163, 113);
+		}
+		
+		.dropdown .dropdown-menu  li > a:hover{
+		background-color: rgb(58, 69, 129);
+		color:#FFF;
+		}
+	
+		.modalclass{
+		background-color:crimson;
+		color:antiquewhite;
+		font-family: monospace;
+		}
